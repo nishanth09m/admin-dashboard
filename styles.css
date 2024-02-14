@@ -75,6 +75,10 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    padding: 1em;
+    gap: 20px;
+    max-height: 35vh;
+    position: relative;
 }
 
 .search{
@@ -185,6 +189,7 @@
     grid-template-rows: 1fr 1fr;
     padding: 20px;
     gap: 20px;
+    padding-right: 40px;
 }
 
 .project{
@@ -193,6 +198,7 @@
 
 .announcement-cards, .card, .trending-cards {
     background-color: rgb(255 255 255);
+    box-shadow: 2px 2px 5px rgb(0 0 0 / 0.1);
 }
 
 .project-cards{
@@ -205,7 +211,7 @@
 
 .card{
     display: grid;
-    padding: 20px;
+    padding: 1.89em;
     gap: 10px;
     border-left: 7px solid aqua;
     border-radius: 5px;
@@ -234,3 +240,42 @@
 .card-buttons > img{
     max-width: 30px;
 } */
+
+
+.announcement-cards{
+    padding: 1.5em;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.announce-card{
+    padding-bottom: 1em;
+    border-bottom: 1px solid rgb(210 210 210);
+    margin-bottom: 1em;
+}
+
+.announcement-cards > .announce-card:last-child{
+    padding-bottom: 0em;
+    border: none;
+    margin: none;
+}
+
+
+.trending-cards{
+    margin-top: 10px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 2fr;
+    padding: 1.67em;
+    border: none;
+    border-radius: 5%;
+    row-gap: 15px;
+}
+
+.card-img{
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    justify-self: center;
+}
